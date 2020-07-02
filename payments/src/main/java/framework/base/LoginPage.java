@@ -32,7 +32,6 @@ public class LoginPage extends BasePage {
     @FindBy(how = How.XPATH, using="//div[@id=\"login-methods-heading-user_credentials\"]")
     public WebElement passwordOpen;
     
-    
     @FindBy(how = How.ID, using="password")
     public WebElement passwordInput;
     
@@ -58,10 +57,6 @@ public class LoginPage extends BasePage {
        System.out.println("---Input Password---");
        System.out.println("---Password is: " + Constants.password);
        super.wait.until(ExpectedConditions.visibilityOf(passwordInput)).sendKeys(Constants.password);
-       super.wait.until(ExpectedConditions.visibilityOf(loginButtonSecondPage)).click();
-       
-       Thread.sleep(30000); //revise this. This will clog down your code
-       
-       
+       super.wait.until(ExpectedConditions.visibilityOf(loginButtonSecondPage)).click(); 
     }
 }
