@@ -27,8 +27,9 @@ public class MainPage  extends BasePage {
 	}
 	
 	public void logOutEpaymentsPage() {
-		WebElement logOutButtonMet = super.wait.until(ExpectedConditions.visibilityOf(logOutButton));
+		logOutButton = super.wait.until(ExpectedConditions.visibilityOf(logOutButton));
 		Assert.assertEquals(logOutButton.isDisplayed(), true, "Log out Button is not Displayed");
-		logOutButtonMet.click();
+		System.out.println("--- Logging Out from Main Page");
+		logOutButton.click();
 	}
 }

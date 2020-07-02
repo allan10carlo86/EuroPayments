@@ -10,28 +10,29 @@ import framework.base.MainPage;
 import framework.utils.PaymentsUtils;
 
 public class Login {
-	
-  public PaymentsUtils utils;
-  public LoginPage loginP;
-  public WebDriver driver;
-  public MainPage mainPage;
-  @BeforeTest 
-  public void beforeTest() {
-	  utils = new PaymentsUtils();
-	  driver = utils.initialize();
-	  loginP = new LoginPage(driver);
-	  mainPage = new MainPage(driver);
-  }
-  
-  @Test
-  public void test() throws InterruptedException {
-	loginP.loginToPaySera();
-	mainPage.verifyMainPage();
-	mainPage.logOutEpaymentsPage();
-  }
-  
-  @AfterTest
-  public void afterTest() {
-	  driver.close();
-  }
+
+	public PaymentsUtils utils;
+	public LoginPage loginP;
+	public WebDriver driver;
+	public MainPage mainPage;
+
+	@BeforeTest
+	public void beforeTest() {
+		utils = new PaymentsUtils();
+		driver = utils.initialize();
+		loginP = new LoginPage(driver);
+		mainPage = new MainPage(driver);
+	}
+
+	@Test
+	public void test() throws InterruptedException {
+		loginP.loginToPaySera();
+		mainPage.verifyMainPage();
+		mainPage.logOutEpaymentsPage();
+	}
+
+	@AfterTest
+	public void afterTest() {
+		driver.close();
+	}
 }

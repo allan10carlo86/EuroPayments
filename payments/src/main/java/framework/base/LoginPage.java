@@ -43,7 +43,7 @@ public class LoginPage extends BasePage {
        
        do {
     	   isDisplayedCancelButton = super.wait.until(ExpectedConditions.visibilityOf(cancelButton)).isDisplayed();
-    	   System.out.println("Is Displayed Cancel Button Seen : " + isDisplayedCancelButton);
+    	   System.out.println("--- Is Displayed Cancel Button Seen : " + isDisplayedCancelButton);
        } while (!(isDisplayedCancelButton));
        
        super.wait.until(ExpectedConditions.visibilityOf(passwordOpen));
@@ -52,13 +52,15 @@ public class LoginPage extends BasePage {
        execute.executeScript(
     		 "document.getElementById(\"login-methods-heading-user_credentials\").click();"
     		   );
-       System.out.println("---Input Password---");
-       System.out.println("---Password is: " + Constants.password);
+       System.out.println("--- Input Password---");
+       System.out.println("--- Password is: " + Constants.password);
        super.wait.until(ExpectedConditions.visibilityOf(passwordInput)).sendKeys(Constants.password);
        super.wait.until(ExpectedConditions.visibilityOf(loginButtonSecondPage)).click(); 
     }
     
     public void loginUsername() {
+    	System.out.println("---Input Username ---");
+    	System.out.println("--- Username: " + Constants.username);
         textLoginName.sendKeys(Constants.username);
         loginButtonFirstPage.click();
     }

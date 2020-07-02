@@ -8,7 +8,7 @@ public class PaymentsUtils {
 		System.out.println("-----Initialize Properties-------");
 		
 		String operatingSystem = getOSName();
-		System.out.println("----Operating System: " + operatingSystem);
+		System.out.println("----Operating System: " + operatingSystem + "---");
 		
 		if(operatingSystem.startsWith(Constants.macString)){
 			System.setProperty("webdriver.chrome.driver",
