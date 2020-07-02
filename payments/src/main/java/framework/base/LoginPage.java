@@ -37,10 +37,8 @@ public class LoginPage extends BasePage {
     
     
     public void loginToPaySera() throws InterruptedException{
-    	
-       textLoginName.sendKeys(Constants.username);
-       loginButtonFirstPage.click();
        
+       loginUsername();
        boolean isDisplayedCancelButton = false;
        
        do {
@@ -58,5 +56,10 @@ public class LoginPage extends BasePage {
        System.out.println("---Password is: " + Constants.password);
        super.wait.until(ExpectedConditions.visibilityOf(passwordInput)).sendKeys(Constants.password);
        super.wait.until(ExpectedConditions.visibilityOf(loginButtonSecondPage)).click(); 
+    }
+    
+    public void loginUsername() {
+        textLoginName.sendKeys(Constants.username);
+        loginButtonFirstPage.click();
     }
 }
