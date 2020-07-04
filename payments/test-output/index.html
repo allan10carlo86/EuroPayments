@@ -2,10 +2,11 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Testing_EPayments">
-              <span class="suite-name border-passed">Testing EPayments</span>
+              <span class="suite-name border-failed">Testing EPayments</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Testing_EPayments" class="hide-methods failed suite-Testing_EPayments"> (hide)</a> <!-- hide-methods failed suite-Testing_EPayments -->
+                      <a href="#" panel-name="suite-Testing_EPayments" class="show-methods failed suite-Testing_EPayments"> (show)</a> <!-- show-methods failed suite-Testing_EPayments -->
+                    </span>
+                    <div class="method-list-content failed suite-Testing_EPayments">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Testing_EPayments" title="framework.test.WrongUsername" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Testing_EPayments -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Testing_EPayments" title="framework.test.Login" hash-for-method="test">test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Testing_EPayments" title="framework.test.WrongUsername" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,24 +156,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Testing_EPayments" class="panel Testing_EPayments">
-          <div class="suite-Testing_EPayments-class-passed">
+          <div class="suite-Testing_EPayments-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">framework.test.Login</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testing_EPayments-class-passed -->
-          <div class="suite-Testing_EPayments-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">framework.test.WrongUsername</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -172,29 +167,41 @@
                   <a name="test">
                   </a> <!-- test -->
                   <span class="method-name">test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#userIdentifier&quot;}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Allans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c87:4247:d8b1:37ce%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/vd/sbtx59bn3fn...}, goog:chromeOptions: {debuggerAddress: localhost:57348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 016c9e96431e46be8973e7c71bfbdbf6
+*** Element info: {Using=id, value=userIdentifier}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at framework.base.LoginPage.wrongUsername(LoginPage.java:155)
+	at framework.test.WrongUsername.test(WrongUsername.java:26)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testing_EPayments-class-passed -->
+          </div> <!-- suite-Testing_EPayments-class-failed -->
           <div class="suite-Testing_EPayments-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">framework.test.TestLinks</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testing_EPayments-class-passed -->
-          <div class="suite-Testing_EPayments-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">framework.test.CreateNewUserTestPasswordDoNotMatch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -239,7 +246,37 @@
           <div class="suite-Testing_EPayments-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">framework.test.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_EPayments-class-passed -->
+          <div class="suite-Testing_EPayments-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">framework.test.PasswordResetValidate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_EPayments-class-passed -->
+          <div class="suite-Testing_EPayments-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">framework.test.CreateNewUserTestPasswordDoNotMatch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -259,39 +296,39 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Testing EPayments&quot;&gt;
-  &lt;test name=&quot;Login&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Testing EPayments&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login --&gt;
-  &lt;test name=&quot;Wrong Username&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Wrong Username&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.WrongUsername&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Wrong Username --&gt;
-  &lt;test name=&quot;Test Extra pages&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Extra pages&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.TestLinks&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Extra pages --&gt;
-  &lt;test name=&quot;Create New Business User Password Do Not Match&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create New Business User Password Do Not Match&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.CreateNewUserTestPasswordDoNotMatch&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Create New Business User Password Do Not Match --&gt;
-  &lt;test name=&quot;Create New Business User Happy Path&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create New Business User Happy Path&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.CreateNewUserTestHappyPath&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Create New Business User Happy Path --&gt;
-  &lt;test name=&quot;Personal Account Validation&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Personal Account Validation&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.CreateNewUserTestPersonalAccountLink&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Personal Account Validation --&gt;
-  &lt;test name=&quot;Forgot Password Validation&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Forgot Password Validation&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.test.PasswordResetValidate&quot;/&gt;
     &lt;/classes&gt;
@@ -354,37 +391,37 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'framework.test.Login')
-data.setCell(0, 3, 29862);
+data.setCell(0, 2, 'framework.test.TestLinks')
+data.setCell(0, 3, 57445);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test')
-data.setCell(1, 2, 'framework.test.PasswordResetValidate')
-data.setCell(1, 3, 20404);
+data.setCell(1, 2, 'framework.test.Login')
+data.setCell(1, 3, 36033);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test')
-data.setCell(2, 2, 'framework.test.TestLinks')
-data.setCell(2, 3, 16721);
+data.setCell(2, 2, 'framework.test.CreateNewUserTestHappyPath')
+data.setCell(2, 3, 23082);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test')
-data.setCell(3, 2, 'framework.test.WrongUsername')
-data.setCell(3, 3, 14546);
+data.setCell(3, 2, 'framework.test.PasswordResetValidate')
+data.setCell(3, 3, 19553);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test')
 data.setCell(4, 2, 'framework.test.CreateNewUserTestPasswordDoNotMatch')
-data.setCell(4, 3, 8467);
+data.setCell(4, 3, 7942);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test')
 data.setCell(5, 2, 'framework.test.CreateNewUserTestPersonalAccountLink')
-data.setCell(5, 3, 7774);
+data.setCell(5, 3, 5002);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'test')
-data.setCell(6, 2, 'framework.test.CreateNewUserTestHappyPath')
-data.setCell(6, 3, 6509);
+data.setCell(6, 2, 'framework.test.WrongUsername')
+data.setCell(6, 3, 23);
 window.suiteTableData['Testing_EPayments']= { tableData: data, tableDiv: 'times-div-Testing_EPayments'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Testing_EPayments">
               </div> <!-- times-div-Testing_EPayments -->
             </div> <!-- times-div -->
@@ -417,101 +454,103 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">13155 ms</span>
+                <span class="method-start">12206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">43020 ms</span>
+                <span class="method-start">48303 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.test.WrongUsername</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">53404 ms</span>
+                <span class="method-start">58943 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test</span>
-                <span class="method-start">60581 ms</span>
+                <span class="method-start">68489 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">75127 ms</span>
+                <span class="method-start">68529 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.test.TestLinks</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">75402 ms</span>
+                <span class="method-start">68955 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">84068 ms</span>
+                <span class="method-start">77493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">100789 ms</span>
+                <span class="method-start">134943 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.test.CreateNewUserTestPasswordDoNotMatch</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">101168 ms</span>
+                <span class="method-start">135322 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">108265 ms</span>
+                <span class="method-start">143309 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">116732 ms</span>
+                <span class="method-start">151265 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.test.CreateNewUserTestHappyPath</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">117030 ms</span>
+                <span class="method-start">151647 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">122396 ms</span>
+                <span class="method-start">157866 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">128905 ms</span>
+                <span class="method-start">180951 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.test.CreateNewUserTestPersonalAccountLink</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">129212 ms</span>
+                <span class="method-start">181340 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">138241 ms</span>
+                <span class="method-start">188451 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">146015 ms</span>
+                <span class="method-start">193456 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.test.PasswordResetValidate</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">146314 ms</span>
+                <span class="method-start">193730 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">152812 ms</span>
+                <span class="method-start">200095 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">173216 ms</span>
+                <span class="method-start">219649 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
