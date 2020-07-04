@@ -13,7 +13,7 @@ public abstract class BasePage {
 	public JavascriptExecutor js;
 	public BasePage (WebDriver instance) {
 		this.webDriverInstance = instance;
-		wait = new WebDriverWait(this.webDriverInstance, 15);
+		wait = new WebDriverWait(this.webDriverInstance, 30);
 		actions = new Actions(webDriverInstance);
 	}
 

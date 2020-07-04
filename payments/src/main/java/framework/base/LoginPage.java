@@ -152,6 +152,7 @@ public class LoginPage extends BasePage {
 	{
 		System.out.println("---Input Username ---");
 		System.out.println("--- Username: " + Constants.incorrectUsername);
+		super.wait.until(ExpectedConditions.visibilityOf(textLoginName));
 		textLoginName.sendKeys(Constants.incorrectUsername);
 		loginButtonFirstPage.click();
 		

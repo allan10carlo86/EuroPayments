@@ -11,7 +11,7 @@ public class MainClass {
 		TestListenerAdapter tla = new TestListenerAdapter();
 		TestNG testNG = new TestNG();	
 		List<String> suites = Lists.newArrayList();
-		suites.add("testng.xml");
+		suites.add("payments/testng.xml");
 		
 		testNG.setTestSuites(suites);
 		testNG.run();
