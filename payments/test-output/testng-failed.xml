@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Testing EPayments]">
-  <test thread-count="5" name="Login(failed)">
+  <test thread-count="5" name="Create New Business User Happy Path(failed)">
     <classes>
-      <class name="framework.test.Login">
-        <methods>
-          <include name="test"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- framework.test.Login -->
-    </classes>
-  </test> <!-- Login(failed) -->
-  <test thread-count="5" name="Wrong Username(failed)">
-    <classes>
-      <class name="framework.test.WrongUsername">
+      <class name="framework.test.CreateNewUserTestHappyPath">
         <methods>
           <include name="test"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- framework.test.WrongUsername -->
+      </class> <!-- framework.test.CreateNewUserTestHappyPath -->
     </classes>
-  </test> <!-- Wrong Username(failed) -->
-  <test thread-count="5" name="Forgot Password Validation(failed)">
-    <classes>
-      <class name="framework.test.PasswordResetValidate">
-        <methods>
-          <include name="test"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- framework.test.PasswordResetValidate -->
-    </classes>
-  </test> <!-- Forgot Password Validation(failed) -->
+  </test> <!-- Create New Business User Happy Path(failed) -->
 </suite> <!-- Failed suite [Testing EPayments] -->

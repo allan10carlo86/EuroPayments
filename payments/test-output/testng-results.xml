@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16118" started-at="2020-07-04T22:11:55 PHT" finished-at="2020-07-04T22:12:11 PHT">
+  <suite name="Default suite" duration-ms="16652" started-at="2020-07-04T22:25:09 PHT" finished-at="2020-07-04T22:25:26 PHT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16118" started-at="2020-07-04T22:11:55 PHT" finished-at="2020-07-04T22:12:11 PHT">
-      <class name="framework.test.WrongUsername">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.WrongUsername@6c49835d]" name="beforeTest" is-config="true" duration-ms="7581" started-at="2020-07-04T22:11:55 PHT" finished-at="2020-07-04T22:12:03 PHT">
+    <test name="Default test" duration-ms="16652" started-at="2020-07-04T22:25:09 PHT" finished-at="2020-07-04T22:25:26 PHT">
+      <class name="framework.test.CreateNewUserTestHappyPath">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@67205a84]" name="beforeTest" is-config="true" duration-ms="7155" started-at="2020-07-04T22:25:09 PHT" finished-at="2020-07-04T22:25:16 PHT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.WrongUsername@6c49835d]" name="test" duration-ms="8320" started-at="2020-07-04T22:12:03 PHT" finished-at="2020-07-04T22:12:11 PHT">
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@67205a84]" name="test" duration-ms="9103" started-at="2020-07-04T22:25:16 PHT" finished-at="2020-07-04T22:25:25 PHT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.WrongUsername@6c49835d]" name="afterTest" is-config="true" duration-ms="159" started-at="2020-07-04T22:12:11 PHT" finished-at="2020-07-04T22:12:11 PHT">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@67205a84]" name="afterTest" is-config="true" duration-ms="294" started-at="2020-07-04T22:25:25 PHT" finished-at="2020-07-04T22:25:26 PHT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- framework.test.WrongUsername -->
+      </class> <!-- framework.test.CreateNewUserTestHappyPath -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
