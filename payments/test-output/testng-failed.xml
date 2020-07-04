@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Testing EPayments]">
-  <test name="Login(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="framework.test.WrongPassword">
+      <class name="framework.test.TestLinks">
         <methods>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
-        </methods>
-      </class> <!-- framework.test.WrongPassword -->
-      <class name="framework.test.Login">
-        <methods>
+          <include name="beforeTest"/>
           <include name="test"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
         </methods>
-      </class> <!-- framework.test.Login -->
+      </class> <!-- framework.test.TestLinks -->
     </classes>
-  </test> <!-- Login(failed) -->
-</suite> <!-- Failed suite [Testing EPayments] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
