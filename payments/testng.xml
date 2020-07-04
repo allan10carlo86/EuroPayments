@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Testing EPayments">
-    <test name="Regression">
-         <classes>
-             <class name="framework.test.Login"/>
-          </classes>
-     </test> <!-- Test -->
+	<test name="Login">
+		<classes>
+			<class name="framework.test.Login" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Wrong Password">
+		<classes>
+			<class name="framework.test.WrongPassword" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Wrong Username"> 
+		<classes>
+			<class name="framework.test.WrongUsername" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->
