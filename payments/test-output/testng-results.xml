@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testing EPayments" duration-ms="207745" started-at="2020-07-04T11:53:09Z" finished-at="2020-07-04T11:56:37Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="55949" started-at="2020-07-04T11:53:09Z" finished-at="2020-07-04T11:54:05Z">
+      <class name="framework.test.Login">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.Login@5034c75a]" name="beforeTest" is-config="true" duration-ms="8988" started-at="2020-07-04T19:53:09Z" finished-at="2020-07-04T19:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.Login@5034c75a]" name="test" duration-ms="36706" started-at="2020-07-04T19:53:18Z" finished-at="2020-07-04T19:53:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.Login@5034c75a]" name="afterTest" is-config="true" duration-ms="10236" started-at="2020-07-04T19:53:55Z" finished-at="2020-07-04T19:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.Login -->
+    </test> <!-- Login -->
+    <test name="Wrong Username" duration-ms="16346" started-at="2020-07-04T11:54:05Z" finished-at="2020-07-04T11:54:22Z">
+      <class name="framework.test.WrongUsername">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.WrongUsername@59fa1d9b]" name="beforeTest" is-config="true" duration-ms="6972" started-at="2020-07-04T19:54:05Z" finished-at="2020-07-04T19:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.WrongUsername@59fa1d9b]" name="test" duration-ms="9220" started-at="2020-07-04T19:54:12Z" finished-at="2020-07-04T19:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.WrongUsername@59fa1d9b]" name="afterTest" is-config="true" duration-ms="152" started-at="2020-07-04T19:54:21Z" finished-at="2020-07-04T19:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.WrongUsername -->
+    </test> <!-- Wrong Username -->
+    <test name="Test Extra pages" duration-ms="54347" started-at="2020-07-04T11:54:22Z" finished-at="2020-07-04T11:55:16Z">
+      <class name="framework.test.TestLinks">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.TestLinks@5e5792a0]" name="beforeTest" is-config="true" duration-ms="6602" started-at="2020-07-04T19:54:22Z" finished-at="2020-07-04T19:54:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.TestLinks@5e5792a0]" name="test" duration-ms="47452" started-at="2020-07-04T19:54:28Z" finished-at="2020-07-04T19:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.TestLinks@5e5792a0]" name="afterTest" is-config="true" duration-ms="290" started-at="2020-07-04T19:55:16Z" finished-at="2020-07-04T19:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.TestLinks -->
+    </test> <!-- Test Extra pages -->
+    <test name="Create New Business User Password Do Not Match" duration-ms="18782" started-at="2020-07-04T11:55:16Z" finished-at="2020-07-04T11:55:35Z">
+      <class name="framework.test.CreateNewUserTestPasswordDoNotMatch">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.CreateNewUserTestPasswordDoNotMatch@47c62251]" name="beforeTest" is-config="true" duration-ms="7930" started-at="2020-07-04T19:55:16Z" finished-at="2020-07-04T19:55:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.CreateNewUserTestPasswordDoNotMatch@47c62251]" name="test" duration-ms="10649" started-at="2020-07-04T19:55:24Z" finished-at="2020-07-04T19:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.CreateNewUserTestPasswordDoNotMatch@47c62251]" name="afterTest" is-config="true" duration-ms="196" started-at="2020-07-04T19:55:35Z" finished-at="2020-07-04T19:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.CreateNewUserTestPasswordDoNotMatch -->
+    </test> <!-- Create New Business User Password Do Not Match -->
+    <test name="Create New Business User Happy Path" duration-ms="23775" started-at="2020-07-04T11:55:35Z" finished-at="2020-07-04T11:55:59Z">
+      <class name="framework.test.CreateNewUserTestHappyPath">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@5e3a8624]" name="beforeTest" is-config="true" duration-ms="6659" started-at="2020-07-04T19:55:35Z" finished-at="2020-07-04T19:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@5e3a8624]" name="test" duration-ms="17019" started-at="2020-07-04T19:55:41Z" finished-at="2020-07-04T19:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@5e3a8624]" name="afterTest" is-config="true" duration-ms="95" started-at="2020-07-04T19:55:58Z" finished-at="2020-07-04T19:55:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.CreateNewUserTestHappyPath -->
+    </test> <!-- Create New Business User Happy Path -->
+    <test name="Personal Account Validation" duration-ms="9384" started-at="2020-07-04T11:55:59Z" finished-at="2020-07-04T11:56:08Z">
+      <class name="framework.test.CreateNewUserTestPersonalAccountLink">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.CreateNewUserTestPersonalAccountLink@6d4b1c02]" name="beforeTest" is-config="true" duration-ms="6376" started-at="2020-07-04T19:55:59Z" finished-at="2020-07-04T19:56:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.CreateNewUserTestPersonalAccountLink@6d4b1c02]" name="test" duration-ms="2833" started-at="2020-07-04T19:56:05Z" finished-at="2020-07-04T19:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.CreateNewUserTestPersonalAccountLink@6d4b1c02]" name="afterTest" is-config="true" duration-ms="173" started-at="2020-07-04T19:56:08Z" finished-at="2020-07-04T19:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.CreateNewUserTestPersonalAccountLink -->
+    </test> <!-- Personal Account Validation -->
+    <test name="Forgot Password Validation" duration-ms="29013" started-at="2020-07-04T11:56:08Z" finished-at="2020-07-04T11:56:37Z">
+      <class name="framework.test.PasswordResetValidate">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.PasswordResetValidate@57baeedf]" name="beforeTest" is-config="true" duration-ms="7773" started-at="2020-07-04T19:56:08Z" finished-at="2020-07-04T19:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.PasswordResetValidate@57baeedf]" name="test" duration-ms="20114" started-at="2020-07-04T19:56:16Z" finished-at="2020-07-04T19:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.PasswordResetValidate@57baeedf]" name="afterTest" is-config="true" duration-ms="1122" started-at="2020-07-04T19:56:36Z" finished-at="2020-07-04T19:56:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.test.PasswordResetValidate -->
+    </test> <!-- Forgot Password Validation -->
+  </suite> <!-- Testing EPayments -->
+</testng-results>
