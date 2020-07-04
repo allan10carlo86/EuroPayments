@@ -73,11 +73,20 @@ public class PaymentsUtils {
 	public String generateRandomCellNumber() {
 		String areaCode = "+63917";
 	    String contactNumber = areaCode;
+	    
+	    String[] possibleContactNumbers = {
+	    		"4895071",
+	    		"3012319",
+	    		"7930920",
+	    		"9382909",
+	    		"9320499",
+	    };
+	    
+
 	    Random randomNumber = new Random();
-		for(int i = 1 ; i <= 6; i++)
-		{
-			contactNumber = contactNumber + randomNumber.nextInt(10);
-		}
+	    int randomNumberInt = randomNumber.nextInt(5);
+	    System.out.println("---- RandomNumber Int: " + randomNumberInt);
+	    contactNumber = contactNumber + possibleContactNumbers[randomNumberInt];
 		System.out.println("----- Contact Number is: " + contactNumber);
 		return contactNumber;
 	}

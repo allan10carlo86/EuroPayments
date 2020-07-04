@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="framework.test.TestLinks">
+      <class name="framework.test.CreateNewUserTestHappyPath">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="test"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- framework.test.TestLinks -->
+      </class> <!-- framework.test.CreateNewUserTestHappyPath -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

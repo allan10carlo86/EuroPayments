@@ -1,5 +1,6 @@
 package framework.base;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -164,8 +165,13 @@ public class CreateNewUser extends BasePage {
 		utilsWeb.checkForFields(super.wait, yourAccountHasBeenCreatedMessage);
 	}
 	
-	public void verifyRobotNotifMethod() {
-		utilsWeb.checkForClickability(super.wait, verifyRobotNotif);
+	public boolean verifyRobotNotifMethod() {
+		try {
+			utilsWeb.checkForClickability(super.wait, verifyRobotNotif);
+			return true;
+		} catch (TimeoutException e) {
+			return false;
+		}
 	}
 	
 	public void checkPersonalAccountLink() {
@@ -193,7 +199,9 @@ public class CreateNewUser extends BasePage {
 		clickBusinessAccountLink();
 		clickOpenBusinessAccountButton();
 		fillOutBusinessAccountDetails();
-		verifyRobotNotifMethod();
+		if(!verifyRobotNotifMethod()) {
+			verifyAccountIsCreated();
+		}
 	}
 	
 	/**

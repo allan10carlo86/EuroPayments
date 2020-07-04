@@ -1,21 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Testing EPayments]">
-  <test name="Login(failed)">
+  <test name="Create New Business User Happy Path(failed)">
     <classes>
-      <class name="framework.test.WrongPassword">
+      <class name="framework.test.WrongUsername">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- framework.test.WrongPassword -->
-      <class name="framework.test.Login">
+      </class> <!-- framework.test.WrongUsername -->
+      <class name="framework.test.CreateNewUserTestHappyPath">
         <methods>
           <include name="test"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- framework.test.CreateNewUserTestHappyPath -->
+      <class name="framework.test.CreateNewUserTestPersonalAccountLink">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- framework.test.CreateNewUserTestPersonalAccountLink -->
+      <class name="framework.test.CreateNewUserTestPasswordDoNotMatch">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- framework.test.CreateNewUserTestPasswordDoNotMatch -->
+      <class name="framework.test.PasswordResetValidate">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- framework.test.PasswordResetValidate -->
+      <class name="framework.test.TestLinks">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- framework.test.TestLinks -->
+      <class name="framework.test.Login">
+        <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- framework.test.Login -->
     </classes>
-  </test> <!-- Login(failed) -->
+  </test> <!-- Create New Business User Happy Path(failed) -->
 </suite> <!-- Failed suite [Testing EPayments] -->

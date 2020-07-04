@@ -6,24 +6,20 @@
 			<class name="framework.test.Login" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Wrong Password">
-		<classes>
-			<class name="framework.test.WrongPassword" />
-		</classes>
-	</test> <!-- Test -->
-	<test name="Wrong Username"> 
+	<test name="Wrong Username">
 		<classes>
 			<class name="framework.test.WrongUsername" />
 		</classes>
 	</test>
-	<test name="Test Extra pages"> 
+	<test name="Test Extra pages">
 		<classes>
 			<class name="framework.test.TestLinks" />
 		</classes>
 	</test>
 	<test name="Create New Business User Password Do Not Match">
 		<classes>
-			<class name="framework.test.CreateNewUserTestPasswordDoNotMatch" />
+			<class
+				name="framework.test.CreateNewUserTestPasswordDoNotMatch" />
 
 		</classes>
 	</test>
@@ -33,18 +29,18 @@
 
 		</classes>
 	</test>
-				
+
 	<test name="Personal Account Validation">
 		<classes>
-			<class name="framework.test.CreateNewUserTestPersonalAccountLink" />
+			<class
+				name="framework.test.CreateNewUserTestPersonalAccountLink" />
 		</classes>
 	</test>
-	
+
 	<test name="Forgot Password Validation">
 		<classes>
 			<class name="framework.test.PasswordResetValidate" />
 		</classes>
 	</test>
-	
-	
-</suite> <!-- Suite -->
+
+</suite> 

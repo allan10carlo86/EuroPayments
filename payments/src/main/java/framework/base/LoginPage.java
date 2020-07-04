@@ -11,15 +11,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import framework.utils.Constants;
+import framework.utils.PaymentsUtils;
 
 public class LoginPage extends BasePage {
 
 	private JavascriptExecutor execute;
-
+	public PaymentsUtils utilsWeb;
+	
 	public LoginPage(WebDriver driverInstance) {
 		super(driverInstance);
 		PageFactory.initElements(driverInstance, this);
-
+		utilsWeb = new PaymentsUtils();
 	}
 
 	@FindBy(how = How.ID, using = "userIdentifier")
@@ -141,6 +143,7 @@ public class LoginPage extends BasePage {
 	public void loginUsername() {
 		System.out.println("---Input Username ---");
 		System.out.println("--- Username: " + Constants.username);
+		utilsWeb.checkForFields(super.wait, textLoginName);
 		textLoginName.sendKeys(Constants.username);
 		loginButtonFirstPage.click();
 	}
@@ -165,12 +168,14 @@ public class LoginPage extends BasePage {
 	}
 	
 	public void clickCreateNewUser() {
+		utilsWeb.checkForFieldsIsDisplayed(super.wait, registerNewUser);
 		registerNewUser.click();
 	}
 	
 	public void goToForgotPassword() throws InterruptedException {
 		loginUsername();
 		validateIfMobileSectionIsExisting();
+		utilsWeb.checkForFields(super.wait, forgotPasswordLink);
 		forgotPasswordLink.click();
 		
 	}

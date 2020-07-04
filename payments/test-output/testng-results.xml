@@ -1,73 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="4" passed="4" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-04T02:55:07Z" name="Testing EPayments" finished-at="2020-07-04T02:57:23Z" duration-ms="135374">
+  <suite name="Default suite" duration-ms="15476" started-at="2020-07-04T11:42:34Z" finished-at="2020-07-04T11:42:50Z">
     <groups>
     </groups>
-    <test started-at="2020-07-04T02:55:07Z" name="Login" finished-at="2020-07-04T02:56:07Z" duration-ms="60196">
-      <class name="framework.test.Login">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:framework.test.Login@3c3d9b6b]" started-at="2020-07-04T10:55:07Z" name="beforeTest" finished-at="2020-07-04T10:55:14Z" duration-ms="6851" status="PASS">
+    <test name="Default test" duration-ms="15476" started-at="2020-07-04T11:42:34Z" finished-at="2020-07-04T11:42:50Z">
+      <class name="framework.test.CreateNewUserTestHappyPath">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@7bb58ca3]" name="beforeTest" is-config="true" duration-ms="6049" started-at="2020-07-04T19:42:34Z" finished-at="2020-07-04T19:42:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="test()[pri:0, instance:framework.test.Login@3c3d9b6b]" started-at="2020-07-04T10:55:14Z" name="test" finished-at="2020-07-04T10:55:57Z" duration-ms="43172" status="PASS">
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@7bb58ca3]" name="test" duration-ms="9229" started-at="2020-07-04T19:42:40Z" finished-at="2020-07-04T19:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:framework.test.Login@3c3d9b6b]" started-at="2020-07-04T10:55:57Z" name="afterTest" finished-at="2020-07-04T10:56:07Z" duration-ms="10133" status="PASS">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.test.CreateNewUserTestHappyPath@7bb58ca3]" name="afterTest" is-config="true" duration-ms="181" started-at="2020-07-04T19:42:49Z" finished-at="2020-07-04T19:42:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- framework.test.Login -->
-    </test> <!-- Login -->
-    <test started-at="2020-07-04T02:56:08Z" name="Wrong Password" finished-at="2020-07-04T02:56:46Z" duration-ms="38397">
-      <class name="framework.test.WrongPassword">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:framework.test.WrongPassword@117e949d]" started-at="2020-07-04T10:56:08Z" name="beforeTest" finished-at="2020-07-04T10:56:13Z" duration-ms="4961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="test()[pri:0, instance:framework.test.WrongPassword@117e949d]" started-at="2020-07-04T10:56:13Z" name="test" finished-at="2020-07-04T10:56:46Z" duration-ms="33330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:framework.test.WrongPassword@117e949d]" started-at="2020-07-04T10:56:46Z" name="afterTest" finished-at="2020-07-04T10:56:46Z" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- framework.test.WrongPassword -->
-    </test> <!-- Wrong Password -->
-    <test started-at="2020-07-04T02:56:46Z" name="Wrong Username" finished-at="2020-07-04T02:56:57Z" duration-ms="10456">
-      <class name="framework.test.WrongUsername">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:framework.test.WrongUsername@d21a74c]" started-at="2020-07-04T10:56:46Z" name="beforeTest" finished-at="2020-07-04T10:56:51Z" duration-ms="5115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="test()[pri:0, instance:framework.test.WrongUsername@d21a74c]" started-at="2020-07-04T10:56:51Z" name="test" finished-at="2020-07-04T10:56:56Z" duration-ms="5091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:framework.test.WrongUsername@d21a74c]" started-at="2020-07-04T10:56:56Z" name="afterTest" finished-at="2020-07-04T10:56:57Z" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- framework.test.WrongUsername -->
-    </test> <!-- Wrong Username -->
-    <test started-at="2020-07-04T02:56:57Z" name="Test Extra pages" finished-at="2020-07-04T02:57:23Z" duration-ms="25979">
-      <class name="framework.test.TestLinks">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:framework.test.TestLinks@313b2ea6]" started-at="2020-07-04T10:56:57Z" name="beforeTest" finished-at="2020-07-04T10:57:03Z" duration-ms="6038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="test()[pri:0, instance:framework.test.TestLinks@313b2ea6]" started-at="2020-07-04T10:57:03Z" name="test" finished-at="2020-07-04T10:57:22Z" duration-ms="19663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:framework.test.TestLinks@313b2ea6]" started-at="2020-07-04T10:57:22Z" name="afterTest" finished-at="2020-07-04T10:57:23Z" duration-ms="274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- framework.test.TestLinks -->
-    </test> <!-- Test Extra pages -->
-  </suite> <!-- Testing EPayments -->
+      </class> <!-- framework.test.CreateNewUserTestHappyPath -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
