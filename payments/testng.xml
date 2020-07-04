@@ -16,4 +16,9 @@
 			<class name="framework.test.WrongUsername" />
 		</classes>
 	</test>
+	<test name="Test Extra pages"> 
+		<classes>
+			<class name="framework.test.TestLinks" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->
