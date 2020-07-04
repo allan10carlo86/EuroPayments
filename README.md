@@ -2,7 +2,7 @@
 
 ** Pre-Requisites:
 
-- Java 1.8
+- Java 1.8 or Higher
 - Eclipse Version Version: 2020-06
 - Mac or Windows System
 - TestNG 
