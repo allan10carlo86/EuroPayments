@@ -1,6 +1,6 @@
 # EuroPayments
 
-**Pre-Requisites:
+** Pre-Requisites:
 
 - Java 1.8
 - Eclipse Version Version: 2020-06
@@ -14,7 +14,7 @@
 **Setting Up Eclipse
 
 - Install Eclipse (Ensure that you have installed TestNG Module in eclipse in Help --> Install New Software using URL: https://dl.bintray.com/testng-team/testng-eclipse/6.10.0)
-- Import the Project (payments folder from cloned repo) [File --> Import] as a Maven Project
+- Import payments folder from EuroPayments [File --> Import] as a Maven Project
 - Ensure that the compiler is set to Java 1.8 
   - Go to payments folder --> Properties --> Java Compiler 
 
@@ -22,11 +22,6 @@
 
 - Open the command prompt / terminal where you cloned the repository.
 - Execute Command java -jar Euro.jar -> This will execute the run
-
-**Running the testng.xml
-
-- Go to testng.xml --> right click --> Run As --> TestNG Suite
-
 
 **Running the Individual Modules
 
