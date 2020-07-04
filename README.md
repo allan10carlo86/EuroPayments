@@ -27,5 +27,7 @@
 
 - Go to payments -> src/main/java -> framework.test --> choose any module --> right-click --> Run As --> TestNG Suite.
 
+NOTE: use "master" branch
+
 
 
