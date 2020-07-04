@@ -185,7 +185,7 @@ public class CreateNewUser extends BasePage {
 	/**
 	 * Go to Personal Account section and validate fields
 	 */
-	
+	 
 	public void goToPersonalAccount() {
 		validateAccountRegistrationPage();
 		checkPersonalAccountLink();
