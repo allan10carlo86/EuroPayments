@@ -45,6 +45,12 @@ public class LoginPage extends BasePage {
 	
 	@FindBy(how = How.XPATH, using = "//div[text()='The specified user could not be found']")
 	public WebElement wrongUsernameMessage;
+	
+	@FindBy(how = How.XPATH, using = "//a[@href=\"/en/registration\"]")
+	public WebElement registerNewUser; 
+	
+	@FindBy(how = How.XPATH, using ="//a[text()='Forgot password?']")
+	public WebElement forgotPasswordLink;
 
 	public void loginToPaySera() throws InterruptedException {
 
@@ -98,6 +104,21 @@ public class LoginPage extends BasePage {
 	}
 
 	public void loginPassword(String password) {
+		
+		validateIfMobileSectionIsExisting();
+
+		System.out.println("--- Input Password---");
+		System.out.println("--- Password is: " + password);
+		super.wait.until(ExpectedConditions.visibilityOf(passwordInput)).sendKeys(password);
+		super.wait.until(ExpectedConditions.visibilityOf(loginButtonSecondPage)).click();
+
+		boolean wrongPasswordMesasgeIsSeen = super.wait.until(ExpectedConditions.visibilityOf(wrongPasswordMessage))
+				.isDisplayed();
+		Assert.assertEquals(wrongPasswordMesasgeIsSeen, true, "wrong password is not seen");
+		System.out.println("--- Wrong Password");
+	}
+
+	public void validateIfMobileSectionIsExisting() {
 		boolean isDisplayedCancelButton = false;
 
 		
@@ -115,18 +136,8 @@ public class LoginPage extends BasePage {
 			execute = (JavascriptExecutor) super.webDriverInstance;
 			execute.executeScript("document.getElementById(\"login-methods-heading-user_credentials\").click();");
 		}
-		
-		System.out.println("--- Input Password---");
-		System.out.println("--- Password is: " + password);
-		super.wait.until(ExpectedConditions.visibilityOf(passwordInput)).sendKeys(password);
-		super.wait.until(ExpectedConditions.visibilityOf(loginButtonSecondPage)).click();
 
-		boolean wrongPasswordMesasgeIsSeen = super.wait.until(ExpectedConditions.visibilityOf(wrongPasswordMessage))
-				.isDisplayed();
-		Assert.assertEquals(wrongPasswordMesasgeIsSeen, true, "wrong password is not seen");
-		System.out.println("--- Wrong Password");
 	}
-
 	public void loginUsername() {
 		System.out.println("---Input Username ---");
 		System.out.println("--- Username: " + Constants.username);
@@ -151,5 +162,16 @@ public class LoginPage extends BasePage {
 		loginUsername();
 		loginPassword(Constants.wrongPassword);
 
+	}
+	
+	public void clickCreateNewUser() {
+		registerNewUser.click();
+	}
+	
+	public void goToForgotPassword() throws InterruptedException {
+		loginUsername();
+		validateIfMobileSectionIsExisting();
+		forgotPasswordLink.click();
+		
 	}
 }

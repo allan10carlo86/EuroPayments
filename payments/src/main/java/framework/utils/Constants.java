@@ -11,5 +11,11 @@ public class Constants {
 	
 	public static final String macString = "Mac";
 	public static final String windowsString = "Windows";
+	
+	public static final String countryVisibleText = "Philippines";
+	public static final String firstName = "Allan";
+	public static final String lastName = "Ramos";
+	public static final String email = "allan.carlo.t.ramos@gmail.com";
+	public static final String contactNumber = "+639178693591";
 
 }

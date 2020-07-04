@@ -21,4 +21,30 @@
 			<class name="framework.test.TestLinks" />
 		</classes>
 	</test>
+	<test name="Create New Business User Password Do Not Match">
+		<classes>
+			<class name="framework.test.CreateNewUserTestPasswordDoNotMatch" />
+
+		</classes>
+	</test>
+	<test name="Create New Business User Happy Path">
+		<classes>
+			<class name="framework.test.CreateNewUserTestHappyPath" />
+
+		</classes>
+	</test>
+				
+	<test name="Personal Account Validation">
+		<classes>
+			<class name="framework.test.CreateNewUserTestPersonalAccountLink" />
+		</classes>
+	</test>
+	
+	<test name="Forgot Password Validation">
+		<classes>
+			<class name="framework.test.PasswordResetValidate" />
+		</classes>
+	</test>
+	
+	
 </suite> <!-- Suite -->
